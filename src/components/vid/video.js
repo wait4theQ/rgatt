@@ -36,7 +36,7 @@ const VideoSection = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M18 12H6" />
                         </svg>
                     </div>
-                    <h3>Assista ao vídeo antes de comprar o curso!</h3>
+                    <h3>Assista o vídeo antes de comprar o curso!</h3>
                     <video ref={videoRef} width="100%" height="auto" controls>
                         <source src={videoSrc} type="video/mp4" />
                     </video>
