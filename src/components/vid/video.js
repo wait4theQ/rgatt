@@ -1,19 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import videoSrc from '../../img/video.mp4';
 import "../vid/video.css";
 
 const VideoSection = () => {
-    const [videoState, setVideoState] = useState('minimized'); // Inicia com o vídeo minimizado
+    const [videoState, setVideoState] = useState('normal'); // Estado inicial
+    const videoRef = useRef(null); // Referência para o elemento de vídeo
 
     const toggleVideoState = () => {
+        if (videoState === 'normal') {
+            videoRef.current.pause(); // Pausa o vídeo ao minimizar
+        } else {
+            videoRef.current.play(); // Reproduz o vídeo ao maximizar
+        }
         setVideoState(prevState => prevState === 'normal' ? 'minimized' : 'normal');
     };
 
     const handleOverlayClick = (event) => {
-        if (event.currentTarget === event.target) {  // Verifica se o clique é realmente no overlay, não em elementos filhos
+        if (event.currentTarget === event.target) {
+            videoRef.current.pause(); // Pausa o vídeo ao clicar fora dele no overlay
             setVideoState('minimized');
         }
     };
+
+    // Garante que o vídeo esteja pausado ao carregar a página
+    useEffect(() => {
+        videoRef.current.pause();
+    }, []);
 
     return (
         <div className="video-section" style={{ pointerEvents: videoState === 'normal' ? 'auto' : 'none' }}>
@@ -25,7 +37,7 @@ const VideoSection = () => {
                         </svg>
                     </div>
                     <h3>Assista ao vídeo antes de comprar o curso!</h3>
-                    <video width="100%" height="auto" controls autoPlay>
+                    <video ref={videoRef} width="100%" height="auto" controls>
                         <source src={videoSrc} type="video/mp4" />
                     </video>
                 </div>
