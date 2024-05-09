@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+.banner {
+  display: flex;
+  height: 100vh;
+  background-color: #e3e2e2;
+}
+
+.banner-content {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  text-align: center;
+  align-content: center;
+  background-image: url("../../img/banner7.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.banner-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  filter: blur(100%);
+  z-index: -1;
+  height: 100vh;
+}
+
+.matricule-se-button {
+  padding: 20px;
+  font-size: 17px;
+  background: linear-gradient(to top, #d15519, #f09745);
+  color: white;
+  border: none;
+  width: 250px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 35px;
+  cursor: pointer;
+  /*margin-top: 450px;*/
+  /*margin-left: 750px;*/
+}
+
+.matricule-se-button:hover {
+  background: linear-gradient(to bottom, #0d3569, #1d95aa);
+}
+.matricule-se-button-placa {
+  padding: 20px;
+  font-size: 17px;
+  background: linear-gradient(to top, #133855, #16212c);
+  color: white;
+  border: none;
+  width: 250px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 35px;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px #18181d;
+  /*margin-top: 450px;*/
+  /*margin-left: 750px;*/
+}
+
+.matricule-se-button-placa:hover {
+  background: linear-gradient(to bottom, #d15519, #ddcc6e);
+}
+.course-section {
+  text-align: center;
+  padding: 80px;
+}
+
+.course-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: auto;
+  align-self: center;
+}
+
+.sobre-o-curso-info {
+  text-align: center;
+}
+.sobre-o-curso-info h3 {
+  text-align: center;
+  margin-left: 40px;
+}
+.sobre-o-curso-image {
+  text-align: center;
+  margin-left: 40px;
+}
+
+.corretor-section {
+  /*background-color: #133855; !* Cor de fundo escura (azul escuro ou laranja escuro) *!*/
+  color: #e7e4e4; /* Cor do texto */
+  text-align: start;
+  width: 60%;
+  margin: auto;
+  margin-left: 100px;
+  padding-top: 20px;
+}
+
+.corretor-section h2 {
+  font-size: 35px; /* Tamanho da fonte do título */
+  /*margin: 20px; !* Espaçamento abaixo do título *!*/
+  color: #d15519;
+  font-family: "Bebas Neue", sans-serif;
+  display: flex;
+  letter-spacing: 1px;
+  margin: 5px;
+  flex-direction: column;
+  align-items: start;
+  width: 50%;
+}
+
+.corretor-section p {
+  text-align: start;
+  font-size: 25px; /* Tamanho da fonte do parágrafo */
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.2;
+  width:40%;
+  color: #133855;
+  margin: 0;
+  align-self: start;
+}
+
+.creci-tti {
+  font-size: 85px; /* Tamanho da fonte do título */
+  color: #133855;
+  margin: 5px !important;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1;
+  text-shadow: 2px 1px 3px rgba(65, 65, 65, 0.81);
+}
+.corretor-section2 {
+  width: 50%;
+}
+.corretor-section2 p {
+  font-size: 17px;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 10px;
+  color: rgb(68, 68, 68);
+  line-height: 1;
+  font-weight: normal;
+  text-align: start;
+  width: 100%;
+}
+.saiba-mais-button {
+  padding: 10px 20px; 
+  font-size: 18px; 
+  background-color: #d15519;
+  color: white; 
+  text-decoration: none; 
+  border: none;
+  border-radius: 5px;
+  margin: 150px !important;
+  cursor: pointer;
+}
+
+.aboutus-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(17, 17, 17, 0.6);
+  border-radius: 20px;
+  color: #e3e2e2;
+  box-shadow: 2px 2px 15px #082238;
+  position: fixed;
+  right: 1vh;
+  top: 20vh;
+  min-width: 200px;
+  max-width: 300px;
+  z-index: 10000;
+}
+
+.aboutus-section h2 {
+  margin: 0px;
+  margin-top: 10px;
+  font-size: 1.9rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.aboutus-section p {
+  color: #ffffff;
+  font-size: 1.3rem;
+  line-height: 0.9;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.aboutus-text h1 {
+  margin: 5px;
+  font-weight: bold;
+  color: #d15519;
+  text-shadow: 2px -2px 1px #18181d, 0px 0px 10px rgba(24, 24, 29, 0.91),
+    0 10px 25px rgba(24, 24, 29, 0.59);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 45px;
+  letter-spacing: 3px;
+  margin-top: 5px;
+}
+.aboutus-text li {
+  list-style: square;
+  text-align: start;
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1;
+  font-weight: normal;
+  
+}
+.aboutus-text h3 {
+  margin-top: 20px;
+}
+
+/* TAMANHO MEDIANO */
+@media (min-width: 801px) and (max-width: 1480px) {
+  .corretor-section {
+    padding: 0;
+    width: 100%;
+    margin: 0 !important;
+    align-self: center;
+  }
+  .creci-tti {
+    font-size: 70px;
+  }
+  .banner-content {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    text-align: center;
+    align-content: center;
+    background-image: url("../../img/banner7.png");
+  }
+  .corretor-section2 p {
+    color: rgba(51, 51, 51, 0.81);
+    width:70%;
+    left:0;
+    margin:0;
+    
+    }
+    .aboutus-section {
+      width: 200px;
+    }
+  
+    .sobre-o-curso-info ul {
+      color: #444444;
+      text-align: start;
+      width: 70%;
+      margin: auto;
+    }
+  
+    .quem-sou-box {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      margin: 10px;
+      background: #133855;
+      /*padding: 15px;*/
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-radius: 20px;
+      color: #e3e2e2;
+      flex: 1;
+      align-self: flex-start;
+    }
+    .aboutus-section h2 {
+      margin: 0px;
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  
+    .aboutus-section p {
+      color: #ffffff;
+      font-size: 0.9rem;
+      line-height: 0.9;
+      text-align: center;
+      font-weight: normal;
+    }
+  
+    .aboutus-text h1 {
+      font-weight: bold;
+      color: #d15519;
+      text-shadow: 2px -2px 1px #18181d, 0px 0px 10px rgba(24, 24, 29, 0.91),
+        0 10px 25px rgba(24, 24, 29, 0.59);
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 30px;
+      letter-spacing: 3px;
+      margin-top: 5px;
+    }
+    .aboutus-text li {
+      list-style: square;
+      text-align: start;
+      color: #ffffff;
+      font-size: 0.9rem;
+      line-height: 1;
+      font-weight: normal;
+    }
+    .matricule-se-button-placa {
+      max-width: 200px;
+      padding: 15px;
+    }
+    .sobre-o-curso-section {
+      justify-content: start;
+      padding-right: 20%;
+    }
+}
+/* FIM TAMANHO MEDIANO */
+/* TAMANHO PEQUENO */
+@media (max-width: 800px) {
+  .banner {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  .banner-content {
+    background-image: url("../../img/banner-mobile2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    padding: 0;
+    padding-bottom: 125px;
+  }
+
+  .banner-content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.75);
+    z-index: -1;
+    padding: 0;
+    padding-bottom: 125px;
+  }
+  .aboutus-section {
+    display: none !important;
+  }
+  .corretor-section {
+    padding: 0;
+    /*display:flex;*/
+    width: 80%;
+    height: 100%;
+    margin:auto;
+    margin-top:130px ;
+    align-self: center;
+  }
+
+  .creci-tti,
+  .corretor-section p {
+    align-items: center;
+    width: 100%;
+  }
+  .creci-tti {
+    font-size: 65px;
+    text-align: center;
+    width: 100%;
+  }
+  .corretor-section h1 {
+    color: #133855;
+  }
+  .corretor-section2 p {
+    color: rgba(51, 51, 51, 0.81);
+  }
+  .corretor-section2  {
+    width:100%;
+  }
+  .corretor-section h2 {
+    font-size: 20px; /* Tamanho da fonte do título */
+    /*margin: 20px; !* Espaçamento abaixo do título *!*/
+    font-family: "Bebas Neue", sans-serif;
+    display: flex;
+    letter-spacing: 1px;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .matricule-se-button {
+    padding: 20px;
+    font-size: 17px;
+    background: linear-gradient(to top, #d15519, #f09745);
+    color: white;
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 35px;
+    cursor: pointer;
+    /*margin-top: 450px;*/
+    /*margin-left: 750px;*/
+  }
+  .corretor-section h2:nth-child(2) {
+    margin-bottom: 20px;
+
+  }
+  .sobre-o-curso-section {
+    padding-right: 0;
+  }
+
+}
+/* FIM TAMANHO PEQUENO */

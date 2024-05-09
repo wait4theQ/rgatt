@@ -1,0 +1,91 @@
+.video-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.video-section h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    color:#dfdfdf
+    
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparente para indicar o overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-modal {
+    position: relative;
+    width: 15%;
+    background: rgba(0, 0, 0, 0.596);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.minimize-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.video-minimized {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+/* Para tablets e dispositivos móveis */
+@media (max-width: 768px) {
+    .video-modal {
+        width: 80%; /* Ocupa mais espaço para melhor visualização */
+        padding: 15px; /* Um pouco menos de padding para economizar espaço */
+    }
+
+    .video-section, .video-overlay {
+        align-items: flex-start; /* Alinha o vídeo ao topo para melhor visualização */
+        padding-top: 20px; /* Espaço no topo */
+    }
+}
+
+/* Para smartphones em modo retrato */
+@media (max-width: 480px) {
+    .video-modal {
+        width: 50%; /* Quase toda a largura da tela */
+        top: 50px;
+    }
+
+    .minimize-icon {
+        top: 5px; /* Menos espaço acima do ícone para economizar área visual */
+        right: 15px;
+    }
+    
+    .video-minimized {
+        bottom: 10px; /* Posiciona mais perto do canto da tela */
+        right: 18px;
+    }
+}

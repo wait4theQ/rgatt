@@ -1,0 +1,131 @@
+.sobre-o-curso-section {
+    background-color: #e3e2e2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 10%;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+   padding-bottom: 20px;
+}
+
+.sobre-o-curso-box h2 {
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    color: #133855;
+    /*text-shadow: 1px 2px 2px rgb(0, 0, 0);*/
+    text-align: center;
+}
+
+.sobre-o-curso-image {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.sobre-o-curso-image img {
+    max-width: 200px;
+}
+
+.sobre-o-curso-box {
+    width: 50%;
+    min-width: 400px;
+    max-width: 600px;
+    margin: 20px;
+    background: #e3e2e2;
+    align-self: center;
+    flex: 1;
+    
+}
+
+.sobre-o-curso-info ul {
+    color: #444444;
+    text-align: start;
+    width: 65%;
+    margin: auto;
+}
+
+.quem-sou-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 400px;
+    max-width: 500px;
+    margin: 20px;
+    background: #133855;
+    /*padding: 15px;*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    color: #e3e2e2;
+    flex: 1;
+    align-self: center;
+    margin-bottom: 150px;
+    margin-top: 90px;
+}
+.instagram-sobre a img {
+    width: 30px;
+    filter: invert(100%) opacity(100%);
+}
+.instagram-sobre a {
+    height: 15px;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ff4e00;
+    color: rgba(0, 0, 0, 0.9);
+}
+.quem-sou-image img {
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    background: #133855;
+}
+
+.quem-sou-info,
+.chamada-instagram {
+    display: flex;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.quem-sou-content p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff4e00;
+    margin: 0;
+}
+.quem-sou-content h2 {
+    font-size: 25px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+.quem-sou-section {
+    width:80%;
+margin-top:50px;
+}
+    .sobre-o-curso-section {
+        width:100%;
+        padding:0;
+    }
+    .quem-sou-box {
+        width:95%;
+        margin:auto;
+        padding:10px;
+        min-width: unset;
+    }
+}

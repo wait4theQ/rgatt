@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+.modal-container {
+    display:none;
+}
+/* TAMANHO MEDIANO*/
+@media  (min-width: 801px) and (max-width: 1440px) {
+
+}
+/* TAMANHO MEDIANO*/
+
+/* TAMANHO PEQUENO*/
+@media (max-width: 800px) {
+    .Modal {
+        display: flex;
+        justify-content: center;
+        /*z-index: 9999999;*/
+        /*position: fixed;*/
+        bottom: 10px;
+    }
+    .modal-container {
+        display:flex;
+        height: 100%;
+        width:100%;
+        max-width:300px;
+        margin:auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .modal-text {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(35, 35, 35);
+        border-radius: 10px;
+        width: 100%;
+        color: #fff;
+        padding:20px;
+        margin:auto;
+    }
+    .modal-text h3 {
+        font-size: 14px;
+        /*font-family: "Bebas Neue", sans-serif;*/
+        display: flex;
+        letter-spacing: 1px;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .modal-text h2 {
+        margin:0;
+        font-size: 26px;
+        color: #d15519 !important;
+        width: 100%;
+    }
+    .matricule-se-button {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .modal-text p {
+        margin:0;
+        font-size: 12px;
+        width: 100%;
+    }
+    .modal-price {
+        margin:15px;
+        width: 100%;
+    }
+}

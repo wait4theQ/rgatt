@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+ 
+  font-family: "Ubuntu", sans-serif;
+}
+html, body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+.App {
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.App-logo {
+  /*height: 40vmin;*/
+  pointer-events: none;
+}
+
+.navigation {
+  padding: 15px;
+  margin: 50px;
+}
+
+/*.banner {*/
+/*  display: flex;*/
+/*  height: 100vh;*/
+/*  background-color: #e3e2e2;*/
+/*}*/
+
+/*.banner-content {*/
+/*  display: flex;*/
+/*  height: 100vh;*/
+/*  flex-direction: row;*/
+/*  text-align: center;*/
+/*  align-content: center;*/
+/*  background-image: url("./img/banner7.png");*/
+/*  background-size: cover;*/
+/*  background-repeat: no-repeat;*/
+/*  background-position: center;*/
+/*  padding: 10px;*/
+/*  width: 100%;*/
+/*}*/
+
+/*.banner-content::before {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  right: 0;*/
+/*  bottom: 0;*/
+/*  left: 0;*/
+/*  width: 100%;*/
+/*  filter: blur(100%);*/
+/*  z-index: -1;*/
+/*  height: 100vh;*/
+/*}*/
+
+/*.matricule-se-button {*/
+/*  padding: 20px;*/
+/*  font-size: 17px;*/
+/*  background: linear-gradient(to top, #d15519, #f09745);*/
+/*  color: white;*/
+/*  border: none;*/
+/*  width: 250px;*/
+/*  text-transform: uppercase;*/
+/*  font-weight: bold;*/
+/*  border-radius: 35px;*/
+/*  cursor: pointer;*/
+/*  !*margin-top: 450px;*!*/
+/*  !*margin-left: 750px;*!*/
+/*}*/
+
+/*.matricule-se-button:hover {*/
+/*  background: linear-gradient(to bottom, #0d3569, #1d95aa);*/
+/*}*/
+/*.matricule-se-button-placa {*/
+/*  padding: 20px;*/
+/*  font-size: 17px;*/
+/*  background: linear-gradient(to top, #133855, #16212c);*/
+/*  color: white;*/
+/*  border: none;*/
+/*  width: 250px;*/
+/*  text-transform: uppercase;*/
+/*  font-weight: bold;*/
+/*  border-radius: 35px;*/
+/*  cursor: pointer;*/
+/*  box-shadow: 2px 2px 3px #18181d;*/
+/*  !*margin-top: 450px;*!*/
+/*  !*margin-left: 750px;*!*/
+/*}*/
+
+/*.matricule-se-button-placa:hover {*/
+/*  background: linear-gradient(to bottom, #d15519, #ddcc6e);*/
+/*}*/
+/*.course-section {*/
+/*  text-align: center;*/
+/*  padding: 80px;*/
+/*}*/
+
+/*.course-section h2 {*/
+/*  font-size: 28px;*/
+/*  font-weight: bold;*/
+/*  margin-bottom: auto;*/
+/*  align-self: center;*/
+/*}*/
+
+/*.sobre-o-curso-info {*/
+/*  text-align: center;*/
+/*}*/
+/*.sobre-o-curso-info h3 {*/
+/*  text-align: center;*/
+/*  margin-left: 40px;*/
+/*}*/
+/*.sobre-o-curso-image {*/
+/*  text-align: center;*/
+/*  margin-left: 40px;*/
+/*}*/
+
+/*.corretor-section {*/
+/*  color: #e7e4e4; !* Cor do texto *!*/
+/*  text-align: start;*/
+/*  width: 60%;*/
+/*  margin: auto;*/
+/*  margin-left: 100px;*/
+/*  padding-top: 20px;*/
+/*}*/
+
+/*.corretor-section h2 {*/
+/*  font-size: 25px; !* Tamanho da fonte do título *!*/
+/*  !*margin: 20px; !* Espaçamento abaixo do título *!*!*/
+/*  color: #d15519;*/
+/*  font-family: "Bebas Neue", sans-serif;*/
+/*  display: flex;*/
+/*  letter-spacing: 1px;*/
+/*  margin: 5px !important;*/
+/*  flex-direction: column;*/
+/*  align-items: start;*/
+/*  width: 50%;*/
+/*}*/
+
+/*.corretor-section p {*/
+/*  text-align: start;*/
+/*  font-size: 1.2rem; !* Tamanho da fonte do parágrafo *!*/
+/*  font-family: "Ubuntu", sans-serif;*/
+/*  line-height: 1.6;*/
+/*  color: #133855;*/
+/*  margin: auto;*/
+/*}*/
+
+/*.creci-tti {*/
+/*  font-size: 70px; !* Tamanho da fonte do título *!*/
+/*  color: #133855;*/
+/*  margin: 5px !important;*/
+/*  font-family: "Bebas Neue", sans-serif;*/
+/*  font-weight: bold;*/
+/*  text-transform: uppercase;*/
+/*  letter-spacing: 5px;*/
+/*  line-height: 1;*/
+/*  text-shadow: 2px 1px 3px rgba(65, 65, 65, 0.81);*/
+/*}*/
+/*.corretor-section2 {*/
+/*  width: 50%;*/
+/*}*/
+/*.corretor-section2 p {*/
+/*  font-size: 17px;*/
+/*  font-family: "Ubuntu", sans-serif;*/
+/*  margin-top: 10px;*/
+/*  color: rgb(68, 68, 68);*/
+/*  line-height: 1;*/
+/*  font-weight: normal;*/
+/*  text-align: start;*/
+/*  width: 100%;*/
+/*}*/
+/*.saiba-mais-button {*/
+/*  padding: 10px 20px; !* Ajuste o preenchimento conforme necessário *!*/
+/*  font-size: 18px; !* Ajuste o tamanho da fonte do botão conforme necessário *!*/
+/*  background-color: #d15519; !* Cor de fundo do botão *!*/
+/*  color: white; !* Cor do texto do botão *!*/
+/*  text-decoration: none; !* Remova a decoração de texto para que pareça um botão *!*/
+/*  border: none;*/
+/*  border-radius: 5px;*/
+/*  margin: 150px !important;*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*.aboutus-section {*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  justify-content: center;*/
+/*  padding: 20px;*/
+/*  background: rgba(17, 17, 17, 0.6);*/
+/*  border-radius: 20px;*/
+/*  color: #e3e2e2;*/
+/*  box-shadow: 2px 2px 15px #082238;*/
+/*  position: fixed;*/
+/*  right: 1vh;*/
+/*  top: 20vh;*/
+/*  min-width: 200px;*/
+/*  max-width: 300px;*/
+/*  z-index: 10000;*/
+/*}*/
+
+/*.aboutus-section h2 {*/
+/*  margin: 0px;*/
+/*  margin-top: 10px;*/
+/*  font-size: 1.9rem;*/
+/*  color: #ffffff;*/
+/*  font-weight: bold;*/
+/*}*/
+
+/*.aboutus-section p {*/
+/*  color: #ffffff;*/
+/*  font-size: 1.3rem;*/
+/*  line-height: 0.9;*/
+/*  text-align: center;*/
+/*  font-weight: normal;*/
+/*}*/
+
+/*.aboutus-text h1 {*/
+/*  margin: 5px;*/
+/*  font-weight: bold;*/
+/*  color: #d15519;*/
+/*  text-shadow: 2px -2px 1px #18181d, 0px 0px 10px rgba(24, 24, 29, 0.91),*/
+/*    0 10px 25px rgba(24, 24, 29, 0.59);*/
+/*  font-family: "Bebas Neue", sans-serif;*/
+/*  font-size: 45px;*/
+/*  letter-spacing: 3px;*/
+/*  margin-top: 5px;*/
+/*}*/
+/*.aboutus-text li {*/
+/*  list-style: square;*/
+/*  text-align: start;*/
+/*  color: #ffffff;*/
+/*  font-size: 1.2rem;*/
+/*  line-height: 1;*/
+/*  font-weight: normal;*/
+/*}*/
+
+
+.testimonials-section {
+  background-color: #444;
+  color: #18181de5;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.testimonials-section h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.testimonial {
+  margin-bottom: 30px;
+}
+
+.client-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.testimonial p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Adicione estilos para as estrelas */
+.testimonial p::after {
+  content: "⭐⭐⭐⭐⭐"; /* Adapte conforme necessário */
+  display: block;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+
+/* ... (seu código anterior) */
+
+.testimonials-section {
+  background: #e3e2e2;
+  padding: 20px;
+}
+.vantagens-content img {
+  min-width: 40px;
+}
+
+
+.slick-slide {
+  text-align: center;
+}
+
+.client-image {
+  display: block;
+  margin: 0 auto;
+  width: 100px; /* Ajuste o tamanho conforme necessário */
+  height: 100px; /* Ajuste o tamanho conforme necessário */
+  border-radius: 50%;
+}
+
+.testimonial p {
+  margin-top: 10px; /* Adicione margem entre a imagem e o texto */
+}
+
+/* App.css */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+/* Seu código CSS existente aqui */
+
+/* Adicione esta seção ao seu arquivo App.css */
+
+/* Adicione isso ao seu arquivo App.css ou crie um novo arquivo CSS para o footer */
+
+.Footer {
+  background-color: #18181d;
+  color: #6b6767;
+  padding: 15px;
+  text-align: center;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.Footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.facebook img {
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+.facebook img:hover {
+  transform: scale(1.1);
+}
+
+.instagram img {
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.instagram img:hover {
+  transform: scale(1.1);
+}
+
+.Footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Adiciona uma transição suave na mudança de cor */
+}
+
+.Footer a:hover {
+  color: #d15519; /* Cor que você deseja quando passar o mouse */
+}
+
+.CreatedBy {
+  color: #ebe9e9;
+  text-align: center;
+  padding: 5px;
+  padding-bottom: 0px;
+  margin-top: 5px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.border {
+  border-top: 0.5px solid #ebe1e2;
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.CreatedBy p {
+  margin: 0;
+}
+
+.CreatedBy a {
+  color: #fbfaff;
+  text-decoration: none;
+}
+
+.CreatedBy a:hover {
+  color: #d15519;
+}
+
+.vantagens-curso h3 {
+  color: #ebe1e2;
+}
+
+.vantagens-curso p {
+  color: #ebe1e2;
+}
+
+/* TAMANHO MEDIANO*/
+@media  (min-width: 801px) and (max-width: 1440px) {
+  .aboutus-section {
+    width: 200px;
+  }
+
+  .sobre-o-curso-info ul {
+    color: #444444;
+    text-align: start;
+    width: 70%;
+    margin: auto;
+  }
+
+  .mobile-navigation {
+    background-image: url("components/navbar/menu.png");
+    background-repeat: no-repeat;
+    display:block;
+    height:40px;
+    width:40px;
+    margin-right:20px;
+    object-fit: cover;
+  }
+  .navigation-mobile ul{
+    background-color: #0d3569;
+    height: 100px;
+  }
+}
+/* TAMANHO MEDIANO*/
+
+/* TAMANHO PEQUENO*/
+@media (max-width: 800px) {
+
+  .vantagens-content {
+    border: none;
+  }
+  .vantagens-section {
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+  }
+
+}

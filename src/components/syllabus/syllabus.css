@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+.syllabus-section-content {
+    display: flex;
+    flex-direction: row;
+    background: #133855;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 2;
+    margin-bottom: 30px;
+}
+
+.syllabus-section-content h5 {
+    font-size: 25px;
+    color: #d15519;
+    text-shadow: 1px 1px 1px #000000;
+    height: 50px;
+    width: 500px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    text-wrap: normal;
+}
+
+.module ul {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    color: #131313;
+    background: #e3e2e2;
+    /*border: 3px solid #d15519;*/
+    box-shadow: 3px 3px 2px rgba(19, 19, 19, 0.7);
+    /*border-radius: 10px;*/
+    border: 3px outset #131313;
+    width: 85%;
+    height: 70%;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    align-self: center;
+    flex: 1;
+}
+
+.syllabus-section {
+    background: #133855 !important;
+    padding: 50px;
+    color: #e3e2e2;
+    /*min-height: 100vh;*/
+}
+.syllabus-section h1 {
+    background: #133855 !important;
+    padding-top: 20px;
+    padding-bottom: 0;
+    color: #e3e2e2;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+.module h5 {
+    font-size: 28px;
+    height: fit-content;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-family: "Bebas Neue", sans-serif;
+    background: #133855;
+    margin-bottom: 30px;
+    font-weight: lighter;
+}
+
+.syllabus-section-content li {
+    list-style: none;
+    font-size: 17px;
+    padding: 5px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.course-numbers {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 40px;
+}
+.course-numbers h5 {
+    font-size: 25px;
+    height: 10px;
+    text-align: center;
+    color: #e3e2e2;
+    width: 100%;
+}
+
+.course-numbers p {
+    font-size: 15px;
+    width: 90%;
+    margin: auto;
+    color: #adadad;
+}
+.course-numbers ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #adadad;
+    margin: auto;
+    padding: 30px;
+}
+.course-numbers li b {
+    color: #e3e2e2;
+    text-shadow: 2px 2px 0 #18181d;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.course-numbers li {
+    /*border: 1px solid #e3e2e2;*/
+    border-radius: 50px;
+    background: rgba(24, 24, 29, 0.76);
+    margin: 5px;
+    box-shadow: 2px 2px 2px 2px #18181d;
+    /*height:30px;*/
+    padding: 15px;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1480px) {
+    .syllabus-section-content {
+        max-width:90%;
+    }
+    .syllabus-section {
+        background: #133855 !important;
+        padding: 50px;
+        color: #e3e2e2;
+    }
+    .Syllabus {
+        height: 100%;
+    }
+    .course-numbers {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    /*.syllabus-section-content {*/
+    /*    max-width:90%;*/
+    /*}*/
+    .syllabus-section {
+        background: #133855 !important;
+        padding: 50px;
+        color: #e3e2e2;
+    }
+    .Syllabus {
+        height: 100%;
+    }
+    .course-numbers ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: #adadad;
+        margin: auto;
+        padding: 10px;
+    }
+    .course-numbers {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 100px;
+    }
+    .course-numbers li {
+        /*border: 1px solid #e3e2e2;*/
+        border-radius: 50px;
+        background: rgba(24, 24, 29, 0.76);
+        margin: 5px;
+        box-shadow: 2px 2px 2px 2px #18181d;
+        /*height:30px;*/
+        padding: 5px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .module {
+        width:100%;
+    }
+    .module h5{
+        width:100%;
+        padding-top:20px;
+    }
+    .syllabus-section h1 {
+        background: #133855 !important;
+        padding-top: 0;
+        margin:0;
+        color: #e3e2e2;
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 50px;
+        letter-spacing: 10px;
+    }
+}

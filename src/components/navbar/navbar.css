@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+.App-header {
+    width: 100%;
+    z-index: 1000;
+    background: linear-gradient(to left, #133855, #051624);
+    padding: 5px;
+    display: flex;
+    height: 55px;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+}
+
+.logos-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 35px;
+    margin: 30px;
+    justify-content: center;
+}
+
+.logo1 {
+    height: 65px;
+}
+
+.logo-container h1 {
+    font-size: 30px;
+    color: #e3e2e2;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    height:100%;
+    align-content: center;
+    justify-content: center;
+    margin:0;
+    align-items: center;
+    cursor: pointer;
+    /*padding: 0;*/
+}
+
+.logo2 {
+    width: 170px;
+    height: auto;
+    margin-left: 15px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation a:hover {
+    background-color: rgba(226, 93, 26, 0.842);
+    border-radius: 5px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding: 15px;
+    
+}
+
+.mobile-navigation,
+.navigation-mobile {
+    display: none;
+}
+
+@media (min-width: 801px) and (max-width: 1480px) {
+    .App-header {
+        position: fixed;
+
+    }
+
+    .logos-container {
+        height: 100%;
+        align-items: center;
+    }
+
+    .logo1 {
+        height: 55px;
+    }
+
+    .logo2 {
+        height: 40px;
+    }
+    .logo-container h1 {
+        font-size: 30px;
+        color: #e3e2e2;
+        font-family: "Bebas Neue", sans-serif;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        align-content: center;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+    }
+    .navigation {
+        display: none;
+    }
+
+    .mobile-navigation {
+        background-image: url("menu.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        display: flex;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        right: 10px;
+        object-fit: cover;
+    }
+
+    .navigation-mobile {
+        background-color: #133855;
+        z-index: 999999;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        width: 100%;
+        align-self: center;
+        margin: auto;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+    }
+
+    .navigation-popup {
+    }
+
+    .navigation-mobile a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+        font-family: "Bebas Neue", sans-serif;
+        letter-spacing: 3px;
+        font-weight: bold;
+        margin: 0;
+        padding: 0px 20px;
+    }
+
+    .mobile-navigation {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .App-header {
+        position: fixed;
+        margin:0;
+        padding: 0;
+        height: 60px;
+        width: 100vw;
+    }
+
+    .logos-container {
+        width: 100%;
+        height: 100%;
+        align-items: end;
+    }
+
+    .logos-container h1 {
+        display: none;
+    }
+
+    .logo1 {
+        height: 55px;
+        margin-top: 40px;
+        margin-left: -30px;
+    }
+
+    .logo2 {
+        height: 50px;
+        margin-left: -5px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+  .mobile-navigation {
+    background-image: url("menu.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 20px;
+    top:10px;
+    object-fit: cover;
+  }
+
+  .navigation-mobile {
+    background-color: #133855;
+    z-index: 999999;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+      margin:auto;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding:30px 0px;
+  }
+
+  .navigation-popup {
+  }
+
+  .navigation-mobile a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0px 20px;
+  }
+
+}
