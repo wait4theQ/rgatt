@@ -8,24 +8,26 @@
     align-items: center;
     justify-content: center;
     z-index: 1000;
+    pointer-events: none; /* Garante que a seção não interfira com outros cliques quando minimizado */
 }
+
 .video-section h3 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 25px;
-    color:#dfdfdf
-    
+    color: #dfdfdf; /* Estilização do texto */
 }
 
 .video-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width:100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparente para indicar o overlay */
     display: flex;
     align-items: center;
     justify-content: center;
+    pointer-events: auto; /* Permite cliques no overlay */
 }
 
 .video-modal {
@@ -38,6 +40,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    pointer-events: auto; /* Permite interações com o modal */
 }
 
 .minimize-icon {
@@ -57,12 +60,13 @@
     color: white;
     border-radius: 20px;
     cursor: pointer;
-    z-index: 1001;
+    z-index: 1001; /* Assegura que o botão esteja sobre outros elementos */
 }
+
 /* Para tablets e dispositivos móveis */
 @media (max-width: 768px) {
     .video-modal {
-        width: 80%; /* Ocupa mais espaço para melhor visualização */
+        width: 80%; /* Ocupa mais espaço para melhor visualização em dispositivos menores */
         padding: 15px; /* Um pouco menos de padding para economizar espaço */
     }
 
@@ -75,17 +79,22 @@
 /* Para smartphones em modo retrato */
 @media (max-width: 480px) {
     .video-modal {
-        width: 50%; /* Quase toda a largura da tela */
-        top: 50px;
+        width: 50%; /* Ajuste na largura para uma visualização confortável */
+        top: 50px; /* Distância do topo para evitar sobreposição com a barra de navegação */
     }
 
     .minimize-icon {
         top: 5px; /* Menos espaço acima do ícone para economizar área visual */
-        right: 15px;
+        right: 15px; /* Ajuste na posição do ícone */
     }
     
     .video-minimized {
         bottom: 10px; /* Posiciona mais perto do canto da tela */
-        right: 18px;
+        right: 18px; /* Ajuste fino na posição horizontal */
     }
 }
+
+.hidden {
+    display: none; /* Oculta elementos que não devem ser exibidos */
+}
+
