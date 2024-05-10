@@ -32,7 +32,7 @@ const VideoSection = () => {
             <div className="video-overlay" onClick={handleOverlayClick} style={{ visibility: videoState === 'normal' ? 'visible' : 'hidden', opacity: videoState === 'normal' ? 1 : 0 }}>
                 <div className="video-modal" onClick={(e) => e.stopPropagation()}>
                     <h3>Assista o vídeo antes de comprar o curso!</h3>
-                    <video ref={videoRef} width="100%" height="auto" controls playsInline muted poster="../../img/rita1.png">
+                    <video ref={videoRef} width="100%" height="auto" controls playsInline >
                         <source src={videoSrc} type="video/mp4" />
                     </video>
                     <div className="minimize-icon" onClick={toggleVideoState}>
