@@ -22,9 +22,15 @@ const VideoSection = () => {
         }
     };
 
-    // Garante que o vídeo esteja pausado ao carregar a página
+    // Adiciona um listener para garantir que o vídeo é pausado na inicialização
     useEffect(() => {
-        videoRef.current.pause();
+        const videoElement = videoRef.current;
+        videoElement.pause();
+        videoElement.addEventListener('loadedmetadata', () => {
+            if (videoElement.readyState >= 2) {
+                videoElement.pause();
+            }
+        });
     }, []);
 
     return (
@@ -32,7 +38,7 @@ const VideoSection = () => {
             <div className="video-overlay" onClick={handleOverlayClick} style={{ visibility: videoState === 'normal' ? 'visible' : 'hidden', opacity: videoState === 'normal' ? 1 : 0 }}>
                 <div className="video-modal" onClick={(e) => e.stopPropagation()}>
                     <h3>Assista o vídeo antes de comprar o curso!</h3>
-                    <video ref={videoRef} width="100%" height="auto" controls>
+                    <video ref={videoRef} width="100%" height="auto" controls preload="metadata">
                         <source src={videoSrc} type="video/mp4" />
                     </video>
                     <div className="minimize-icon" onClick={toggleVideoState}>
