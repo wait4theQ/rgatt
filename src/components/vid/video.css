@@ -14,14 +14,15 @@
 .video-section h3 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 25px;
-    color: #dfdfdf; /* Estilização do texto */
+    color: #020202; /* Estilização do texto */
+    margin-bottom: 20px; /* Espaço entre o texto e o vídeo */
 }
 
 .video-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width:100%;
+    width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparente para indicar o overlay */
     display: flex;
@@ -33,7 +34,7 @@
 .video-modal {
     position: relative;
     width: 15%;
-    background: rgba(0, 0, 0, 0.596);
+    background: rgb(233, 230, 69);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -45,19 +46,36 @@
 
 .minimize-icon {
     position: absolute;
-    top: 10px;
-    right: 20px;
+    bottom: -40px; /* Reposiciona para abaixo do modal */
+    right: 50%; /* Centraliza horizontalmente */
+    transform: translateX(50%); /* Ajuste fino para centralização perfeita */
     cursor: pointer;
-    color: aliceblue;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre o ícone e o texto */
+}
+
+.minimize-icon svg {
+    color: aliceblue; /* Cor do ícone */
+}
+
+.minimize-icon span {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    color: aliceblue; /* Cor do texto */
 }
 
 .video-minimized {
     position: fixed;
+    width: 150px;
+    height: 60px;
     right: 20px;
     bottom: 20px;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #d15519;
     color: white;
+    font-size: 21px;
+    font-family: "Bebas Neue", sans-serif;
     border-radius: 20px;
     cursor: pointer;
     z-index: 1001; /* Assegura que o botão esteja sobre outros elementos */
@@ -84,8 +102,7 @@
     }
 
     .minimize-icon {
-        top: 5px; /* Menos espaço acima do ícone para economizar área visual */
-        right: 15px; /* Ajuste na posição do ícone */
+        bottom: -30px; /* Ajuste na altura para dispositivos menores */
     }
     
     .video-minimized {
@@ -97,4 +114,3 @@
 .hidden {
     display: none; /* Oculta elementos que não devem ser exibidos */
 }
-
