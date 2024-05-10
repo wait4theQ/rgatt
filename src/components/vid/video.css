@@ -8,13 +8,13 @@
     align-items: center;
     justify-content: center;
     z-index: 1000;
-    pointer-events: none; /* Garante que a seção não interfira com outros cliques quando minimizado */
+    pointer-events: none; /* Evita interferências com outros cliques quando minimizado */
 }
 
 .video-section h3 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 25px;
-    color: #020202; /* Estilização do texto */
+    color: #020202;
     margin-bottom: 20px; /* Espaço entre o texto e o vídeo */
 }
 
@@ -24,11 +24,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparente para indicar o overlay */
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
-    pointer-events: auto; /* Permite cliques no overlay */
+    pointer-events: auto;
 }
 
 .video-modal {
@@ -36,36 +36,36 @@
     width: 15%;
     background: rgb(233, 230, 69);
     padding: 20px;
-    padding-bottom: 80px; /* Aumenta o espaço na parte inferior para acomodar o botão de minimizar */
+    padding-bottom: 80px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
-    pointer-events: auto; /* Permite interações com o modal */
+    pointer-events: auto;
 }
 
 .minimize-icon {
     position: absolute;
-    bottom: 20px; /* Posicionado dentro do modal, abaixo do vídeo */
-    left: 50%; /* Centralização horizontal */
-    transform: translateX(-50%); /* Ajuste fino para centralização perfeita */
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 8px; /* Espaço entre o ícone e o texto */
+    gap: 8px;
 }
 
 .minimize-icon svg {
-    color: rgb(3, 3, 3); /* Cor do ícone */
-    width: 30px; /* Aumenta o tamanho do ícone */
-    height: 30px; /* Aumenta o tamanho do ícone */
+    color: rgb(3, 3, 3);
+    width: 3px;
+    height: 35px;
 }
 
 .minimize-icon span {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 20px; /* Aumenta o tamanho do texto */
-    color: rgb(3, 3, 3); /* Cor do texto */
+    font-size: 18px;
+    color: rgb(3, 3, 3);
 }
 
 .video-minimized {
@@ -81,27 +81,56 @@
     font-family: "Bebas Neue", sans-serif;
     border-radius: 20px;
     cursor: pointer;
-    z-index: 1001; /* Assegura que o botão esteja sobre outros elementos */
+    z-index: 1001;
 }
 
-/* Para tablets e dispositivos móveis */
 @media (max-width: 768px) {
     .video-modal {
-        width: 80%; /* Ocupa mais espaço para melhor visualização em dispositivos menores */
+        width: 40%; /* Maior porcentagem para visibilidade */
         padding: 15px;
-        padding-bottom: 70px; /* Ajuste proporcional para dispositivos menores */
+        padding-bottom: 70px;
+        top: 70px;
     }
+
+    .video-section, .video-overlay {
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+    
+}
+@media (max-width: 1570px) {
+    .video-modal {
+        width: 20%; /* Maior porcentagem para visibilidade */
+        padding: 15px;
+        padding-bottom: 70px;
+        top: 70px;
+    }
+
+    .video-section, .video-overlay {
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+    
 }
 
-/* Para smartphones em modo retrato */
 @media (max-width: 480px) {
     .video-modal {
-        width: 90%; /* Ajuste na largura para uma visualização confortável */
+        width: 50%;
         padding: 10px;
-        padding-bottom: 60px; /* Menor ajuste para a altura em dispositivos muito pequenos */
+        padding-bottom: 60px;
+        top: 100px;
+    }
+
+    .video-minimized, .minimize-icon span {
+        font-size: 15px; /* Reduz o tamanho da fonte para melhor ajuste */
+    }
+
+    .minimize-icon svg {
+        width: 25px; /* Reduz o tamanho do ícone */
+        height: 25px;
     }
 }
 
 .hidden {
-    display: none; /* Oculta elementos que não devem ser exibidos */
+    display: none;
 }
