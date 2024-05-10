@@ -22,15 +22,9 @@ const VideoSection = () => {
         }
     };
 
-    // Adiciona um listener para garantir que o vídeo é pausado na inicialização
+    // Garante que o vídeo esteja pausado ao carregar a página
     useEffect(() => {
-        const videoElement = videoRef.current;
-        videoElement.pause();
-        videoElement.addEventListener('loadedmetadata', () => {
-            if (videoElement.readyState >= 2) {
-                videoElement.pause();
-            }
-        });
+        videoRef.current.pause();
     }, []);
 
     return (
@@ -38,14 +32,14 @@ const VideoSection = () => {
             <div className="video-overlay" onClick={handleOverlayClick} style={{ visibility: videoState === 'normal' ? 'visible' : 'hidden', opacity: videoState === 'normal' ? 1 : 0 }}>
                 <div className="video-modal" onClick={(e) => e.stopPropagation()}>
                     <h3>Assista o vídeo antes de comprar o curso!</h3>
-                    <video ref={videoRef} width="100%" height="auto" controls preload="metadata">
+                    <video ref={videoRef} width="100%" height="auto" controls>
                         <source src={videoSrc} type="video/mp4" />
                     </video>
                     <div className="minimize-icon" onClick={toggleVideoState}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
-                        <span>Não, obrigado(a)! vou assistir depois</span>
+                        <span>Assista Depois</span>
                     </div>
                 </div>
             </div>
