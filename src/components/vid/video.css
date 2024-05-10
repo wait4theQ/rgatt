@@ -33,16 +33,17 @@
 
 .video-modal {
     position: relative;
-    width: 15%;
+    width: 15%; /* Ajuste inicial para maior visibilidade */
     background: rgb(233, 230, 69);
     padding: 20px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
     pointer-events: auto;
+    transition: width 0.3s ease; /* Suaviza a transição de largura */
 }
 
 .minimize-icon {
@@ -54,18 +55,21 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    bottom: 10px;
 }
 
 .minimize-icon svg {
     color: rgb(3, 3, 3);
     width: 30px;
     height: 35px;
+    
 }
 
 .minimize-icon span {
     font-family: "Bebas Neue", sans-serif;
     font-size: 18px;
     color: rgb(3, 3, 3);
+    
 }
 
 .video-minimized {
@@ -84,44 +88,27 @@
     z-index: 1001;
 }
 
-@media (max-width: 768px) {
+/* Ajustes para dispositivos maiores, tablets e móveis */
+@media (max-width: 1570px) {
     .video-modal {
-        width: 40%; /* Maior porcentagem para visibilidade */
-        padding: 20px;
-        padding-bottom: 70px;
+        width: 19%; /* Maior porcentagem para visibilidade */
+        padding: 15px;
+        padding-bottom: 80px;
         top: 70px;
     }
-
-    .video-section, .video-overlay {
-        align-items: flex-start;
-        padding-top: 20px;
-    }
-    
     
 }
 
-
-@media (max-width: 1570px) {
+@media (max-width: 768px) {
     .video-modal {
-        width: 23%; /* Maior porcentagem para visibilidade */
-        padding: 15px;
-        padding-bottom: 70px;
-        top: 70px;
+        width: 70%; /* Tamanho maior para tablets */
     }
-
-    .video-section, .video-overlay {
-        align-items: flex-start;
-        padding-top: 20px;
-    }
-    
 }
 
 @media (max-width: 480px) {
     .video-modal {
-        width: 50%;
-        padding: 20px;
-        padding-bottom: 70px;
-        top: 50px;
+        width: 55%; /* Tamanho máximo para smartphones */
+        padding-bottom: 70px; /* Espaço adicional para a iconografia */
     }
 
     .video-minimized, .minimize-icon span {
