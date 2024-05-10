@@ -107,7 +107,7 @@
 
 @media (max-width: 480px) {
     .video-modal {
-        width: 55%; /* Tamanho máximo para smartphones */
+        width: 70%; /* Tamanho máximo para smartphones */
         padding-bottom: 70px; /* Espaço adicional para a iconografia */
     }
 
