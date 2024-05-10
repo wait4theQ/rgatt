@@ -36,6 +36,7 @@
     width: 15%;
     background: rgb(233, 230, 69);
     padding: 20px;
+    padding-bottom: 60px; /* Aumenta o espaço na parte inferior para acomodar o botão de minimizar */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -46,9 +47,8 @@
 
 .minimize-icon {
     position: absolute;
-    bottom: -40px; /* Reposiciona para abaixo do modal */
-    right: 50%; /* Centraliza horizontalmente */
-    transform: translateX(50%); /* Ajuste fino para centralização perfeita */
+    bottom: 20px; /* Posicionado dentro do modal, abaixo do vídeo */
+    right: 20px; /* Alinhamento à direita dentro do modal */
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -56,13 +56,15 @@
 }
 
 .minimize-icon svg {
-    color: aliceblue; /* Cor do ícone */
+    color: rgb(3, 3, 3); /* Cor do ícone */
+    
 }
 
 .minimize-icon span {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 25px;
-    color: aliceblue; /* Cor do texto */
+    font-size: 21px;
+    
+    color: rgb(3, 3, 3); /* Cor do texto */
 }
 
 .video-minimized {
@@ -85,7 +87,8 @@
 @media (max-width: 768px) {
     .video-modal {
         width: 80%; /* Ocupa mais espaço para melhor visualização em dispositivos menores */
-        padding: 15px; /* Um pouco menos de padding para economizar espaço */
+        padding: 15px;
+        padding-bottom: 50px; /* Ajuste proporcional para dispositivos menores */
     }
 
     .video-section, .video-overlay {
@@ -97,17 +100,13 @@
 /* Para smartphones em modo retrato */
 @media (max-width: 480px) {
     .video-modal {
-        width: 50%; /* Ajuste na largura para uma visualização confortável */
-        top: 50px; /* Distância do topo para evitar sobreposição com a barra de navegação */
+        width: 90%; /* Ajuste na largura para uma visualização confortável */
+        padding: 10px;
+        padding-bottom: 40px; /* Menor ajuste para a altura em dispositivos menores */
     }
 
     .minimize-icon {
-        bottom: -30px; /* Ajuste na altura para dispositivos menores */
-    }
-    
-    .video-minimized {
-        bottom: 10px; /* Posiciona mais perto do canto da tela */
-        right: 18px; /* Ajuste fino na posição horizontal */
+        bottom: 10px; /* Ajuste de posição para estar sempre visível e dentro do modal */
     }
 }
 
