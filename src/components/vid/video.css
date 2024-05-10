@@ -87,7 +87,7 @@
 @media (max-width: 768px) {
     .video-modal {
         width: 40%; /* Maior porcentagem para visibilidade */
-        padding: 15px;
+        padding: 20px;
         padding-bottom: 70px;
         top: 70px;
     }
@@ -119,8 +119,8 @@
 @media (max-width: 480px) {
     .video-modal {
         width: 50%;
-        padding: 10px;
-        padding-bottom: 105px;
+        padding: 20px;
+        padding-bottom: 90px;
         top: 50px;
     }
 
